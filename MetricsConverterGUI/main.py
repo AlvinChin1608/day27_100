@@ -26,7 +26,7 @@ input.grid(column= 2, row = 0)
 def button_clicked():
     new_label = input.get()
     calculate = float(new_label)*1.609
-    result_label.config(text=f"{calculate:.2f}") # Update result_label with calculated value
+    result_label.config(text=f"{calculate}") # Update result_label with calculated value
 button = Button(text="Calculate", command=button_clicked)
 button.grid(column=2, row=3)  # Placing the button in grid
 
